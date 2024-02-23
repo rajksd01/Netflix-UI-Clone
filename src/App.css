@@ -1,0 +1,10 @@
+#root {
+  margin: 0 auto;
+}
+
+/* custom-scrollbar.css */
+/* Hide the scrollbar, but still enable scrolling */
+.scrollContainer::-webkit-scrollbar {
+ display:none;
+}
+

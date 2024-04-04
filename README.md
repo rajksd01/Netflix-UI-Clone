@@ -16,3 +16,5 @@ One can run this project just by cloning the project .
 * Setup the environment variables :
   - VITE_TMDB_API_KEY : Your Key
   - VITE_OPENAI_API_KEY: Your Key 
+
+Make sure to explore more!

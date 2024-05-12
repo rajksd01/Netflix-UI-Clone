@@ -2,10 +2,8 @@ import { useSelector } from "react-redux";
 import LANG from "../utils/LanguageConstants";
 import { useRef } from "react";
 import openai from "../utils/openai";
-import dotenv from "dotenv/config";
 
 function GPTSearchBar() {
-  const env = dotenv.config();
   const searchText = useRef(null);
   const language = useSelector((store) => store.config.lang);
   const handleFormSubmit = (e) => {
@@ -60,8 +58,8 @@ import {
   HarmBlockThreshold,
 } from "@google/generative-ai";
 
-const MODEL_NAME = process.env.MODEL_NAME;
-const API_KEY = process.env.API_KEY;
+const MODEL_NAME = import.meta.env.VITE_MODEL_NAME;
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 async function runChat() {
   const genAI = new GoogleGenerativeAI(API_KEY);
